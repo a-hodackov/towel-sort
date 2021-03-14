@@ -5,11 +5,11 @@ module.exports = function towelSort(matrix) {
     }
 
     return matrix
-        .map((val, indx) => {
-            if (indx % 2 === 0) {
-                return val;
+        .map((value, index) => {
+            if (index % 2 === 0) {
+                return value;
             } else {
-                return val.reverse();
+                return value.reverse();
             }
         })
         .flat();
